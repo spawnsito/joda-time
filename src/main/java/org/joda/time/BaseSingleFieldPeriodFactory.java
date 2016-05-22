@@ -13,6 +13,7 @@ public class BaseSingleFieldPeriodFactory {
 
     public BaseSingleFieldPeriodFactory() {
         this.rules.put(Years.class, new YearsFactoryRule());
+        this.rules.put(Days.class, new DaysFactoryRule());
     }
 
     public BaseSingleFieldPeriod create(Class className, int numeral) {
