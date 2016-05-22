@@ -73,7 +73,7 @@ public final class Years extends BaseSingleFieldPeriod {
     }
 
     private static Years retrieveYears(int years) {
-        return (Years) PoolStorage.retrieve(Years.class).retrieve(years);
+        return (Years) Pool.retrieve(Years.class).retrieve(years);
     }
 
     //-----------------------------------------------------------------------

@@ -81,7 +81,7 @@ public final class Days extends BaseSingleFieldPeriod {
     }
 
     private static Days retrieveDays(int days) {
-        return (Days) PoolStorage.retrieve(Days.class).retrieve(days);
+        return (Days) Pool.retrieve(Days.class).retrieve(days);
     }
 
     //-----------------------------------------------------------------------

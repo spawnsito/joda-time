@@ -91,7 +91,7 @@ public final class Months extends BaseSingleFieldPeriod {
     }
 
     private static Months retrieveMonths(int months) {
-        return (Months) PoolStorage.retrieve(Months.class).retrieve(months);
+        return (Months) Pool.retrieve(Months.class).retrieve(months);
     }
 
     //-----------------------------------------------------------------------

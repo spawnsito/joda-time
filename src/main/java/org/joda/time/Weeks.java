@@ -73,7 +73,7 @@ public final class Weeks extends BaseSingleFieldPeriod {
     }
 
     private static Weeks retrieveWeeks(int weeks) {
-        return (Weeks) PoolStorage.retrieve(Weeks.class).retrieve(weeks);
+        return (Weeks) Pool.retrieve(Weeks.class).retrieve(weeks);
     }
 
     //-----------------------------------------------------------------------

@@ -73,7 +73,7 @@ public final class Seconds extends BaseSingleFieldPeriod {
     }
 
     private static Seconds retrieveSeconds(int seconds) {
-        return (Seconds) PoolStorage.retrieve(Seconds.class).retrieve(seconds);
+        return (Seconds) Pool.retrieve(Seconds.class).retrieve(seconds);
     }
 
     //-----------------------------------------------------------------------

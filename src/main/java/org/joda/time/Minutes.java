@@ -73,7 +73,7 @@ public final class Minutes extends BaseSingleFieldPeriod {
     }
 
     private static Minutes retrieveMinutes(int minutes) {
-        return (Minutes) PoolStorage.retrieve(Minutes.class).retrieve(minutes);
+        return (Minutes) Pool.retrieve(Minutes.class).retrieve(minutes);
     }
 
     //-----------------------------------------------------------------------
