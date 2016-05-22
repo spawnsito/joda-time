@@ -15,9 +15,13 @@ public class PoolStorage {
 
         if (pool == null) {
             pool = new BaseSingleFieldPeriodPool(className);
-            pools.put(className, pool);
+            add(className, pool);
         }
 
         return pool;
+    }
+
+    private static void add(Class<? extends BaseSingleFieldPeriod> className, BaseSingleFieldPeriodPool pool) {
+        pools.put(className, pool);
     }
 }

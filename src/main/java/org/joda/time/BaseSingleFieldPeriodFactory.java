@@ -20,8 +20,12 @@ public class BaseSingleFieldPeriodFactory {
     }
 
     public BaseSingleFieldPeriod create(Class className, int numeral) {
-        BaseSingleFieldPeriodFactoryRule rule = this.rules.get(className);
+        BaseSingleFieldPeriodFactoryRule rule = getRule(className);
 
         return rule.create(numeral);
+    }
+
+    private BaseSingleFieldPeriodFactoryRule getRule(Class className) {
+        return this.rules.get(className);
     }
 }
