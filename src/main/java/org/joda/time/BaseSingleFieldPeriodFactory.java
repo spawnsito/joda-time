@@ -15,6 +15,8 @@ public class BaseSingleFieldPeriodFactory {
         this.rules.put(Years.class, new YearsFactoryRule());
         this.rules.put(Days.class, new DaysFactoryRule());
         this.rules.put(Months.class, new MonthsFactoryRule());
+        this.rules.put(Minutes.class, new MinutesFactoryRule());
+        this.rules.put(Seconds.class, new SecondsFactoryRule());
     }
 
     public BaseSingleFieldPeriod create(Class className, int numeral) {
